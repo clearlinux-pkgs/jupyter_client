@@ -1,5 +1,5 @@
 PKG_NAME := jupyter_client
-URL := https://pypi.python.org/packages/e5/6f/65412ed462202b90134b7e761b0b7e7f949e07a549c1755475333727b3d0/jupyter_client-5.0.0.tar.gz
+URL := https://pypi.python.org/packages/01/6d/1566172f3497c79741774971df80db44e10d3c692801e59f9cd3ea64b19a/jupyter_client-5.0.1.tar.gz
 
 
 include ../common/Makefile.common
