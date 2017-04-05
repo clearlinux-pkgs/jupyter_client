@@ -4,7 +4,7 @@
 #
 Name     : jupyter_client
 Version  : 5.0.1
-Release  : 4
+Release  : 5
 URL      : https://pypi.python.org/packages/01/6d/1566172f3497c79741774971df80db44e10d3c692801e59f9cd3ea64b19a/jupyter_client-5.0.1.tar.gz
 Source0  : https://pypi.python.org/packages/01/6d/1566172f3497c79741774971df80db44e10d3c692801e59f9cd3ea64b19a/jupyter_client-5.0.1.tar.gz
 Summary  : Jupyter protocol implementation and client libraries
@@ -12,6 +12,7 @@ Group    : Development/Tools
 License  : BSD-3-Clause-Clear
 Requires: jupyter_client-bin
 Requires: jupyter_client-python
+Requires: pyzmq
 BuildRequires : pbr
 BuildRequires : pip
 BuildRequires : python-dev
@@ -43,12 +44,12 @@ python components for the jupyter_client package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1491398283
+export SOURCE_DATE_EPOCH=1491398972
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1491398283
+export SOURCE_DATE_EPOCH=1491398972
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
