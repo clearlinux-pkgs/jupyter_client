@@ -4,7 +4,7 @@
 #
 Name     : jupyter_client
 Version  : 5.2.0
-Release  : 14
+Release  : 15
 URL      : https://pypi.debian.net/jupyter_client/jupyter_client-5.2.0.tar.gz
 Source0  : https://pypi.debian.net/jupyter_client/jupyter_client-5.2.0.tar.gz
 Summary  : Jupyter protocol implementation and client libraries
@@ -65,7 +65,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1513614612
+export SOURCE_DATE_EPOCH=1513614662
 python3 setup.py build -b py3
 
 %install
