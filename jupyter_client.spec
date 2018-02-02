@@ -4,7 +4,7 @@
 #
 Name     : jupyter_client
 Version  : 5.2.2
-Release  : 18
+Release  : 19
 URL      : https://pypi.debian.net/jupyter_client/jupyter_client-5.2.2.tar.gz
 Source0  : https://pypi.debian.net/jupyter_client/jupyter_client-5.2.2.tar.gz
 Summary  : Jupyter protocol implementation and client libraries
