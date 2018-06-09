@@ -4,7 +4,7 @@
 #
 Name     : jupyter_client
 Version  : 5.2.3
-Release  : 22
+Release  : 23
 URL      : https://pypi.debian.net/jupyter_client/jupyter_client-5.2.3.tar.gz
 Source0  : https://pypi.debian.net/jupyter_client/jupyter_client-5.2.3.tar.gz
 Summary  : Jupyter protocol implementation and client libraries
@@ -16,9 +16,7 @@ Requires: jupyter_client-python
 Requires: ipykernel
 Requires: ipython
 Requires: jupyter_core
-Requires: pytest
 Requires: python-dateutil
-Requires: python-mock
 Requires: pyzmq
 Requires: tornado
 Requires: traitlets
@@ -71,7 +69,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1522108274
+export SOURCE_DATE_EPOCH=1528564743
 python3 setup.py build -b py3
 
 %install
