@@ -24,7 +24,7 @@ BuildRequires : jupyter_core
 BuildRequires : pbr
 BuildRequires : pip
 BuildRequires : python-dateutil
-BuildRequires : python-dev
+
 BuildRequires : python3-dev
 BuildRequires : pyzmq
 BuildRequires : setuptools
