@@ -4,7 +4,7 @@
 #
 Name     : jupyter_client
 Version  : 5.2.4
-Release  : 32
+Release  : 33
 URL      : https://files.pythonhosted.org/packages/e5/5c/f9b2182a445e3a6a8204daf04193154c474220f836dbcedc7d139276600e/jupyter_client-5.2.4.tar.gz
 Source0  : https://files.pythonhosted.org/packages/e5/5c/f9b2182a445e3a6a8204daf04193154c474220f836dbcedc7d139276600e/jupyter_client-5.2.4.tar.gz
 Summary  : Jupyter protocol implementation and client libraries
