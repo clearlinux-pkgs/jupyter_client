@@ -2,5 +2,6 @@
 bash_kernel
 ipykernel
 ipython
+nbval
 notebook
 qtconsole
