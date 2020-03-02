@@ -4,7 +4,7 @@
 #
 Name     : jupyter_client
 Version  : 6.0.0
-Release  : 39
+Release  : 40
 URL      : https://files.pythonhosted.org/packages/b9/ae/6abdd7d5df5a3af23b9c7ee1a509b7606eeb17f5857bb97de93bf92cf0dc/jupyter_client-6.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/b9/ae/6abdd7d5df5a3af23b9c7ee1a509b7606eeb17f5857bb97de93bf92cf0dc/jupyter_client-6.0.0.tar.gz
 Summary  : Jupyter protocol implementation and client libraries
@@ -28,7 +28,50 @@ BuildRequires : traitlets
 
 %description
 # Jupyter Client
+
 [![Code Health](https://landscape.io/github/jupyter/jupyter_client/master/landscape.svg?style=flat)](https://landscape.io/github/jupyter/jupyter_client/master)
+
+
+`jupyter_client` contains the reference implementation of the [Jupyter protocol][].
+It also provides client and kernel management APIs for working with kernels.
+
+It also provides the `jupyter kernelspec` entrypoint
+for installing kernelspecs for use with Jupyter frontends.
+
+[Jupyter protocol]: https://jupyter-client.readthedocs.io/en/latest/messaging.html
+
+
+# Development Setup
+
+The [Jupyter Contributor Guides](http://jupyter.readthedocs.io/en/latest/contributor/content-contributor.html) provide extensive information on contributing code or documentation to Jupyter projects. The limited instructions below for setting up a development environment are for your convenience.
+
+## Coding
+
+You'll need Python and `pip` on the search path. Clone the Jupyter Client git repository to your computer, for example in `/my/project/jupyter_client`.
+Now create an [editable install](https://pip.pypa.io/en/stable/reference/pip_install/#editable-installs)
+and download the dependencies of code and test suite by executing:
+
+    cd /my/projects/jupyter_client/
+    pip install -e .[test]
+    py.test
+
+The last command runs the test suite to verify the setup. During development, you can pass filenames to `py.test`, and it will execute only those tests.
+
+## Documentation
+
+The documentation of Jupyter Client is generated from the files in `docs/` using Sphinx. Instructions for setting up Sphinx with a selection of optional modules are in the [Documentation Guide](http://jupyter.readthedocs.io/en/latest/contrib_docs/index.html). You'll also need the `make` command.
+For a minimal Sphinx installation to process the Jupyter Client docs, execute:
+
+    pip install ipykernel sphinx sphinx_rtd_theme
+
+The following commands build the documentation in HTML format and check for broken links:
+
+    cd /my/projects/jupyter_client/docs/
+    make html linkcheck
+
+Point your browser to the following URL to access the generated documentation:
+
+_file:///my/projects/jupyter\_client/docs/\_build/html/index.html_
 
 %package bin
 Summary: bin components for the jupyter_client package.
@@ -60,6 +103,7 @@ python components for the jupyter_client package.
 Summary: python3 components for the jupyter_client package.
 Group: Default
 Requires: python3-core
+Provides: pypi(jupyter-client)
 
 %description python3
 python3 components for the jupyter_client package.
@@ -74,7 +118,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582560180
+export SOURCE_DATE_EPOCH=1583162711
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
