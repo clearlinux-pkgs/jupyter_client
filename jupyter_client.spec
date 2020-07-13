@@ -4,7 +4,7 @@
 #
 Name     : jupyter_client
 Version  : 6.1.5
-Release  : 45
+Release  : 46
 URL      : https://files.pythonhosted.org/packages/7a/b9/19caca13db50de6726f895b4fcfc9306f172d9744aaf0c185073c6f9e1f1/jupyter_client-6.1.5.tar.gz
 Source0  : https://files.pythonhosted.org/packages/7a/b9/19caca13db50de6726f895b4fcfc9306f172d9744aaf0c185073c6f9e1f1/jupyter_client-6.1.5.tar.gz
 Summary  : Jupyter protocol implementation and client libraries
