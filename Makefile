@@ -1,5 +1,5 @@
 PKG_NAME := jupyter_client
-URL = https://files.pythonhosted.org/packages/db/96/4bc30e91d14abb3b459e15b86d25039a12ebc75df963b3005aa713d360bb/jupyter_client-7.0.3.tar.gz
+URL = https://files.pythonhosted.org/packages/3a/60/93431efe42bd110e4c323c03fd1902a3d35494fecf948cb1922ea5a7401d/jupyter_client-7.0.4.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
