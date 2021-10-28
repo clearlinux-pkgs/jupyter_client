@@ -4,7 +4,7 @@
 #
 Name     : jupyter_client
 Version  : 7.0.6
-Release  : 63
+Release  : 64
 URL      : https://files.pythonhosted.org/packages/be/4f/7d2e1764ba352cf764d5e08fa4a1576c3e11e5c233e832b7f03af2e39482/jupyter_client-7.0.6.tar.gz
 Source0  : https://files.pythonhosted.org/packages/be/4f/7d2e1764ba352cf764d5e08fa4a1576c3e11e5c233e832b7f03af2e39482/jupyter_client-7.0.6.tar.gz
 Summary  : Jupyter protocol implementation and client libraries
