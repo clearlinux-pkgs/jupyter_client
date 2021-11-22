@@ -2,7 +2,6 @@
 bash_kernel
 ipykernel
 ipython
+jupyter_console
 nbval
-notebook
 qtconsole
-spyder-kernels
